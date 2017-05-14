@@ -44,7 +44,7 @@ if (count($articulos->lista())> 0): ?>
 		<td><?php echo $value['unidad']; ?></td>
 		<td><?php echo round($value['cantidad'],2); ?></td>
 		<td><?php echo round($value['precio'],2); ?></td>
-		<td><?php echo date_format(date_create($value['FECHA_CREACION']), 'd/m/Y H:i:s');?></td>
+		<td><?php echo date_format(date_create($value['fecha_creacion']), 'd/m/Y H:i:s');?></td>
 		<td>
 		<a href="../vistas/actualizar.php?codigo=<?php echo $value['codigo']; ?>" class="btn btn-sm btn-primary"><i class="glyphicon glyphicon-refresh"></i> Actualizar</a>
 		<a href="../controlador/eliminar.php?codigo=<?php echo $value['codigo'] ?>" class="btn btn-sm btn-danger"><i class="glyphicon glyphicon-trash"></i> Eliminar</a>
